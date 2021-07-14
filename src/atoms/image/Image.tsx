@@ -1,11 +1,12 @@
+import React from 'react';
 import './style.css';
 
-type ImageProps = {
+interface ImageProps {
     source: string,
     altText: string,
     className: string,
     style?: object,
-    handleClick?: any
+    handleClick?: ()=>void
 }
 
 export default function Image(props:ImageProps){

@@ -1,7 +1,8 @@
 import './style.css';
 import Image from '../../atoms/image/Image';
+import { ReactElement } from 'react';
 
-function Logo() {
+function Logo():ReactElement {
   return (
     <div className="logo">
             <Image 

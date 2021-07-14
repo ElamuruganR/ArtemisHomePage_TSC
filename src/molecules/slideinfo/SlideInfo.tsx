@@ -1,12 +1,13 @@
 import './style.css';
 import Image from '../../atoms/image/Image';
 import Button from '../../atoms/button/Button';
+import { ReactElement } from 'react';
 
 type SlideInfoProps = {
     data: {title:string, info:string, btn1:string, btn2:string}
 }
 
-export default function SlideInfo({data}:SlideInfoProps) {
+export default function SlideInfo({data}:SlideInfoProps):ReactElement {
     return (
         <div className="slide-details">
             <div className="title">{data.title}</div>

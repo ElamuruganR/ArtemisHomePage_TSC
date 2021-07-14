@@ -3,8 +3,9 @@ import LeftArrow from '../../molecules/arrows/LeftArrow';
 import RightArrow from '../../molecules/arrows/RightArrow';
 import { cardsData as data } from '../../testdata/data';
 import Image from '../../atoms/image/Image';
+import { ReactElement } from 'react';
 
-export default function Cards(){
+export default function CarouselGrid():ReactElement{
     const arrowContainerStyle = {
         position: "relative",
         display: "flex",

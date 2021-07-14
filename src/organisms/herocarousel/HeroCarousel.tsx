@@ -1,5 +1,5 @@
 import { useEffect,  useState } from 'react';
-import './carousel.css';
+import './herocarousel.css';
 import {carouselData as data} from '../../testdata/data';
 import Slide from './Slide';
 import LeftArrow from '../../molecules/arrows/LeftArrow';
@@ -11,7 +11,7 @@ enum Direction {
     Left
 }
 
-export default function Carousel(){
+export default function HeroCarousel(){
     
     const [index, setIndex] = useState<number>(0);
     const [direction, setDirection] = useState<Direction.Left | Direction.None |Direction.Right>(0);

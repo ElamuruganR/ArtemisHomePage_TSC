@@ -1,11 +1,12 @@
 import './style.css'
 import Image from '../../atoms/image/Image';
-import Text from '../../atoms/text/Text';
+import Input from '../../atoms/text/Input';
+import { ReactElement } from 'react';
 
-export default function SearchBar() {
+export default function SearchBar():ReactElement {
     return(
         <div className="search-bar">
-            <Text 
+            <Input 
                 type="text"
                 placeholder="Search for a show, episode, shorts etc."
                 className="search-input" 

@@ -1,12 +1,12 @@
 import './style.css';
 
-type TextProps = {
+type InputProps = {
     type: "text" | "number",
     placeholder: string,
     className: string
 }
 
-export default function Text({type, placeholder, className}:TextProps){
+export default function Input({type, placeholder, className}:InputProps){
     return(
         <input 
             type={type}

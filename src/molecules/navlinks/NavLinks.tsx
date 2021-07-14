@@ -1,7 +1,8 @@
 import './style.css'
 import Link from '../../atoms/link/Link';
+import { ReactElement } from 'react';
 
-export default function NavLinks(){
+export default function NavLinks():ReactElement{
     return(
         <ul className="navlinks">
             <li><Link className="navlink">Home</Link></li>

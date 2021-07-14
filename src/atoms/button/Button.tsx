@@ -1,6 +1,7 @@
+import { HTMLAttributes } from 'react';
 import './style.css';
 
-type ButtonProps = {
+interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
     className?: string,
     style?: object,
     children: string
