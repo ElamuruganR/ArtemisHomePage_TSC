@@ -1,6 +1,7 @@
+import { InputHTMLAttributes } from 'react';
 import './style.css';
 
-type InputProps = {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     type: "text" | "number",
     placeholder: string,
     className: string

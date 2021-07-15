@@ -1,6 +1,12 @@
+import { AnchorHTMLAttributes } from 'react';
 import './style.css';
 
-export default function Link({className, children}:{className:string, children:string}) {
+interface linkProps extends AnchorHTMLAttributes<HTMLLinkElement> {
+    className: string,
+    children: string
+}
+
+export default function Link({className, children}:linkProps) {
     return(
         <a href="#" 
            className = {className}

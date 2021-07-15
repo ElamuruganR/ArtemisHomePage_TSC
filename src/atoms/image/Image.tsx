@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ImgHTMLAttributes } from 'react';
 import './style.css';
 
-interface ImageProps {
+interface ImageProps extends  ImgHTMLAttributes<HTMLImageElement> {
     source: string,
     altText: string,
     className: string,

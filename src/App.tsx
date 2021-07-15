@@ -2,8 +2,9 @@ import './App.css';
 import Header from './organisms/header/Header';
 import HeroCarousel from './organisms/herocarousel/HeroCarousel';
 import CarouselGrid from './organisms/cards/CarouselGrid';
+import { ReactElement } from 'react';
 
-function App() {
+function App():ReactElement {
   return (
     <div className="App">
       <Header />
